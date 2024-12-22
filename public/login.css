@@ -1,0 +1,31 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.inner-container{
+    background-color: #8E05C2;
+    width: 300px;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(250, 248, 248, 0.986);
+}
+.container .inner-container label{
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.container .inner-container h2{
+    text-align: center;
+}
+.container .inner-container input[type='submit']{
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    height: 40px;
+    background-color: black;
+    border: none;
+    color: white;
+}

@@ -1,0 +1,17 @@
+h3,h2{
+    color: white;
+}
+.col-sm-3{
+    background-color: #8E05C2;
+    margin: 5px;
+    
+}
+
+.col-sm-3:hover{
+    box-shadow: 0px 0px 10px rgba(250, 248, 248, 0.986);
+}
+@media screen and (max-width: 480px) {
+    .col-sm-6{
+        margin-bottom: 10px;
+    }
+  }

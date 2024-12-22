@@ -1,0 +1,18 @@
+body{
+    background-color: #000000;
+}
+.bg-custom{
+    background-color: #700B97;
+}
+.btn-custom{
+    width: 100%;
+    background-color: #700B97;
+    margin-top: 20px;
+}
+.message{
+    color: black;
+    background-color: white;
+    border-radius: 70%;
+    border: none;
+    padding: 10px;
+}
