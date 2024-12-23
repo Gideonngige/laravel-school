@@ -21,3 +21,4 @@ Route::post('/marks', [SchoolController::class, 'marks'])->name('marks');
 Route::post('/pay', [SchoolController::class, 'payget']);
 Route::post('/pay', [SchoolController::class, 'pay'])->name('pay');
 Route::get('/message', [SchoolController::class, 'message'])->name('message');
+Route::post('/message', [SchoolController::class, 'messageAdmin'])->name('messageAdmin');

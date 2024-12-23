@@ -61,16 +61,20 @@
         </form>
         @if(isset($message2))
             <p class="alert alert-danger">{{ $message2 }}</p>
-    @endif
+        @endif
     
         </div>
         <div class="card">
             <div class="card-header">Send Message</div>
             <div class="card-body">
-                <form>
+                <form action="{{ route('messageAdmin')}}" method="post">
+                    @csrf
                     <textarea class="form-control" name="message" placeholder="enter message to send"></textarea>
                     <input type="submit" class="btn btn-custom" value="Send Message"/>
                 </form>
+                @if(isset($response))
+                  <p class="alert alert-danger">{{ $response }}</p>
+                @endif
 
             </div>
         </div>

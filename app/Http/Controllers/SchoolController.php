@@ -203,6 +203,21 @@ class SchoolController extends Controller
         }
     }
     public function message(){
-        return view('school.message');
+        $query_message = DB::select('select message, message_time from messages');
+
+        return view('school.message',['messages'=>$query_message]);
+    }
+    public function messageAdmin(Request $request){
+        $message = $request->input('message');
+        $query_send = DB::insert('insert into messages(message) values (?)',[$message]);
+        if($query_send){
+            $response = "Message sent successfully";
+            return view('school.admin',['response'=>$response]);
+        }
+        else{
+            $response = "An error occurred";
+            return view('school.admin',['response'=>$response]);
+        }
+
     }
 }

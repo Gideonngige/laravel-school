@@ -33,7 +33,7 @@
                 <a class="nav-link" href="{{ route('form.submit') }}">Login</a>
               </li>
               <li class="nav-item" >
-                <a class="nav-link" href="">Messages <span class="message">1</span></a>
+                <a class="nav-link" href="{{route('message')}}">Messages</a>
               </li>
             </ul>
           </div>
